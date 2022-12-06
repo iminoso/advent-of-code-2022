@@ -1,7 +1,7 @@
-import string
+from types import *
 
 
-def find_unique_sequence(sequence: string, sequence_length: int) -> int:
+def find_unique_sequence(sequence: str, sequence_length: int) -> int:
     s, e = 0, sequence_length - 1
     cache = {}
     for i in range(4):

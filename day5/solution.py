@@ -1,4 +1,4 @@
-import string
+from types import *
 import re
 
 CARGO = [
@@ -43,7 +43,7 @@ def move_cargo(cargo, move_set):
     cargo[dest] += moving
 
 
-def part_1() -> string:
+def part_1() -> str:
     cargo, moves = parse_input()
     for move_set in moves:
         move_cargo(cargo, move_set)
@@ -62,7 +62,7 @@ def move_cargo_part_2(cargo, move_set):
     cargo[dest] += moving
 
 
-def part_2() -> string:
+def part_2() -> str:
     cargo, moves = parse_input()
     for move_set in moves:
         move_cargo_part_2(cargo, move_set)
